@@ -1,0 +1,16 @@
+{
+  "name": "United Church of Religious Science",
+  "short_name": "UCRS Ventura",
+  "description": "A 501(c)(3) nonprofit spiritual community in Ventura, California",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0c4a6e",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
