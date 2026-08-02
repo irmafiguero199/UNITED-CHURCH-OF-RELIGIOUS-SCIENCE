@@ -82,23 +82,23 @@ const Home = () => {
             {[
               {
                 icon: BookOpen,
-                title: 'Sunday Services',
-                desc: 'Weekly inspirational services featuring meditation, music, and practical spiritual teachings based on the Science of Mind.',
+                title: "Sunday Services",
+                desc: "Inspirational weekly services featuring meditation, music, and practical teachings based on Science of Mind.",
               },
               {
                 icon: Users,
-                title: 'Classes & Workshops',
-                desc: 'In-depth study of Science of Mind principles, including Foundations, Practitioner Training, and special topic workshops.',
+                title: "Classes & Workshops",
+                desc: "In-depth study of spiritual principles, foundational courses, and specialized topic workshops.",
               },
               {
                 icon: Heart,
-                title: 'Spiritual Support',
-                desc: 'One-on-one spiritual counseling, prayer support, and pastoral care for members navigating life's challenges.',
+                title: "Spiritual Support",
+                desc: "One-on-one spiritual counseling, prayer support, and pastoral care for members navigating life's challenges.",
               },
               {
                 icon: Calendar,
-                title: 'Community Events',
-                desc: 'Retreats, social gatherings, holiday celebrations, and interfaith activities that build meaningful connections.',
+                title: "Community Events",
+                desc: "Retreats, social gatherings, holiday celebrations, and interfaith activities that build meaningful connections.",
               },
             ].map((program, i) => (
               <div key={i} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-slate-100">
@@ -124,10 +124,10 @@ const Home = () => {
         <div className="container-custom px-4">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {[
-              { value: '1984', label: 'Year Founded' },
-              { value: '500+', label: 'Community Members Served' },
-              { value: '12+', label: 'Weekly Programs' },
-              { value: '$50K+', label: 'Annual Community Support' },
+              { value: "1984", label: "Year Founded" },
+              { value: "500+", label: "Community Members Served" },
+              { value: "12+", label: "Weekly Programs" },
+              { value: "$50K+", label: "Annual Community Support" },
             ].map((stat, i) => (
               <div key={i}>
                 <p className="text-4xl font-bold text-church-gold mb-2">{stat.value}</p>
