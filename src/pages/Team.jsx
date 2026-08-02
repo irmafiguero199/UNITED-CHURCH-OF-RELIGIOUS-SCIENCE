@@ -1,72 +1,72 @@
-import { Helmet } from 'react-helmet-async'
-import SectionHeader from '../components/SectionHeader'
-import { Users, Calendar, Mail, Shield } from 'lucide-react'
+import { Helmet } from "react-helmet-async"
+import SectionHeader from "../components/SectionHeader"
+import { Users, Calendar, Mail, Shield } from "lucide-react"
 
 const Team = () => {
   const board = [
     {
-      name: 'Dr. Patricia Williams',
-      role: 'President, Board of Directors',
-      bio: 'Dr. Williams has served on the Board since 2015 and brings over 30 years of experience in nonprofit governance and spiritual leadership. She is a licensed Religious Science practitioner and retired clinical psychologist who has dedicated her life to integrating spiritual principles with mental health practices.',
-      since: '2015',
+      name: "Dr. Patricia Williams",
+      role: "President, Board of Directors",
+      bio: "Dr. Williams has served on the Board since 2015 and brings over 30 years of experience in nonprofit governance and spiritual leadership. She is a licensed Religious Science practitioner and retired clinical psychologist who has dedicated her life to integrating spiritual principles with mental health practices.",
+      since: "2015",
     },
     {
-      name: 'Robert Martinez',
-      role: 'Vice President, Board of Directors',
-      bio: 'Robert is a successful entrepreneur and long-time member of our community. He oversees strategic planning and fundraising initiatives for the church. His business acumen and deep spiritual commitment have been instrumental in the church's growth and financial stability.',
-      since: '2018',
+      name: "Robert Martinez",
+      role: "Vice President, Board of Directors",
+      bio: "Robert is a successful entrepreneur and long-time member of our community. He oversees strategic planning and fundraising initiatives for the church. His business acumen and deep spiritual commitment have been instrumental in the church"s growth and financial stability.",
+      since: "2018",
     },
     {
-      name: 'Linda Chang',
-      role: 'Secretary, Board of Directors',
-      bio: 'Linda has been a member of United Church of Religious Science since 2008. As a retired educator, she brings exceptional organizational skills and a passion for youth ministry to the Board. She chairs the Education Committee and oversees our class curriculum development.',
-      since: '2016',
+      name: "Linda Chang",
+      role: "Secretary, Board of Directors",
+      bio: "Linda has been a member of United Church of Religious Science since 2008. As a retired educator, she brings exceptional organizational skills and a passion for youth ministry to the Board. She chairs the Education Committee and oversees our class curriculum development.",
+      since: "2016",
     },
     {
-      name: 'Michael O'Brien',
-      role: 'Treasurer, Board of Directors',
-      bio: 'Michael is a Certified Public Accountant with 25 years of experience in nonprofit financial management. He ensures the church operates with full financial transparency and compliance with all 501(c)(3) regulations. He has been a member since 2010.',
-      since: '2017',
+      name: "Michael O"Brien",
+      role: "Treasurer, Board of Directors",
+      bio: "Michael is a Certified Public Accountant with 25 years of experience in nonprofit financial management. He ensures the church operates with full financial transparency and compliance with all 501(c)(3) regulations. He has been a member since 2010.",
+      since: "2017",
     },
     {
-      name: 'Rev. Susan Goldstein',
-      role: 'Board Member, Senior Minister',
-      bio: 'Rev. Goldstein is the Senior Minister of United Church of Religious Science and serves as an ex-officio member of the Board. She has been with the church since 2005 and was ordained in 2012. Her sermons and teachings have inspired thousands of individuals in Ventura and beyond.',
-      since: '2012',
+      name: "Rev. Susan Goldstein",
+      role: "Board Member, Senior Minister",
+      bio: "Rev. Goldstein is the Senior Minister of United Church of Religious Science and serves as an ex-officio member of the Board. She has been with the church since 2005 and was ordained in 2012. Her sermons and teachings have inspired thousands of individuals in Ventura and beyond.",
+      since: "2012",
     },
     {
-      name: 'Dr. James Holloway',
-      role: 'Board Member',
-      bio: 'Dr. Holloway is a professor of religious studies at a local university and brings academic expertise in New Thought philosophy to the Board. He has published extensively on Ernest Holmes and the history of Religious Science in America.',
-      since: '2020',
+      name: "Dr. James Holloway",
+      role: "Board Member",
+      bio: "Dr. Holloway is a professor of religious studies at a local university and brings academic expertise in New Thought philosophy to the Board. He has published extensively on Ernest Holmes and the history of Religious Science in America.",
+      since: "2020",
     },
   ]
 
   const staff = [
     {
-      name: 'Rev. Susan Goldstein',
-      role: 'Senior Minister',
-      bio: 'Rev. Goldstein leads all spiritual and administrative functions of the church. She delivers Sunday messages, teaches advanced classes, provides pastoral care, and represents the church in the broader community.',
+      name: "Rev. Susan Goldstein",
+      role: "Senior Minister",
+      bio: "Rev. Goldstein leads all spiritual and administrative functions of the church. She delivers Sunday messages, teaches advanced classes, provides pastoral care, and represents the church in the broader community.",
     },
     {
-      name: 'Maria Santos',
-      role: 'Office Administrator',
-      bio: 'Maria manages the day-to-day operations of the church office, coordinates events, handles communications, and serves as the primary point of contact for members and visitors. She has been with the church since 2016.',
+      name: "Maria Santos",
+      role: "Office Administrator",
+      bio: "Maria manages the day-to-day operations of the church office, coordinates events, handles communications, and serves as the primary point of contact for members and visitors. She has been with the church since 2016.",
     },
     {
-      name: 'Thomas Wright',
-      role: 'Music Director',
-      bio: 'Thomas oversees all musical aspects of our Sunday services and special events. He leads our choir, coordinates musicians, and creates an uplifting musical environment that enhances our spiritual experience.',
+      name: "Thomas Wright",
+      role: "Music Director",
+      bio: "Thomas oversees all musical aspects of our Sunday services and special events. He leads our choir, coordinates musicians, and creates an uplifting musical environment that enhances our spiritual experience.",
     },
     {
-      name: 'Jennifer Park',
-      role: 'Youth & Family Coordinator',
-      bio: 'Jennifer develops and implements programs for children, teens, and families. She creates curriculum for Sunday School, organizes family events, and ensures our youngest members feel welcomed and valued.',
+      name: "Jennifer Park",
+      role: "Youth & Family Coordinator",
+      bio: "Jennifer develops and implements programs for children, teens, and families. She creates curriculum for Sunday School, organizes family events, and ensures our youngest members feel welcomed and valued.",
     },
     {
-      name: 'Carlos Mendez',
-      role: 'Facilities Manager',
-      bio: 'Carlos maintains our Ventura facility, ensuring it is safe, clean, and welcoming for all who enter. He also coordinates setup for events, classes, and services.',
+      name: "Carlos Mendez",
+      role: "Facilities Manager",
+      bio: "Carlos maintains our Ventura facility, ensuring it is safe, clean, and welcoming for all who enter. He also coordinates setup for events, classes, and services.",
     },
   ]
 
@@ -102,7 +102,7 @@ const Team = () => {
             {board.map((member, i) => (
               <div key={i} className="bg-slate-50 rounded-xl p-6 border border-slate-100">
                 <div className="w-14 h-14 bg-primary-100 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-primary-700 font-bold text-lg">{member.name.split(' ').map(n => n[0]).join('')}</span>
+                  <span className="text-primary-700 font-bold text-lg">{member.name.split(" ").map(n => n[0]).join("")}</span>
                 </div>
                 <h3 className="font-serif font-bold text-lg text-church-navy">{member.name}</h3>
                 <p className="text-primary-600 text-sm font-medium mb-3">{member.role}</p>
@@ -124,7 +124,7 @@ const Team = () => {
             {staff.map((member, i) => (
               <div key={i} className="bg-white rounded-xl p-6 border border-slate-100 shadow-sm">
                 <div className="w-14 h-14 bg-secondary-100 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-secondary-700 font-bold text-lg">{member.name.split(' ').map(n => n[0]).join('')}</span>
+                  <span className="text-secondary-700 font-bold text-lg">{member.name.split(" ").map(n => n[0]).join("")}</span>
                 </div>
                 <h3 className="font-serif font-bold text-lg text-church-navy">{member.name}</h3>
                 <p className="text-secondary-600 text-sm font-medium mb-3">{member.role}</p>

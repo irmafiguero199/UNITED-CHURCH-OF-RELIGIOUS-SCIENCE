@@ -1,10 +1,10 @@
-import { Helmet } from 'react-helmet-async'
-import { useState } from 'react'
-import SectionHeader from '../components/SectionHeader'
-import { MapPin, Phone, Mail, Clock, Shield, Send, CheckCircle } from 'lucide-react'
+import { Helmet } from "react-helmet-async"
+import { useState } from "react"
+import SectionHeader from "../components/SectionHeader"
+import { MapPin, Phone, Mail, Clock, Shield, Send, CheckCircle } from "lucide-react"
 
 const Contact = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', phone: '', subject: '', message: '' })
+  const [formData, setFormData] = useState({ name: "", email: "", phone: "", subject: "", message: "" })
   const [submitted, setSubmitted] = useState(false)
 
   const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -12,7 +12,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     setSubmitted(true)
-    setFormData({ name: '', email: '', phone: '', subject: '', message: '' })
+    setFormData({ name: "", email: "", phone: "", subject: "", message: "" })
   }
 
   return (

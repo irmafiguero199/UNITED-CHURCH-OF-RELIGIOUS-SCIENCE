@@ -1,24 +1,24 @@
-import { Helmet } from 'react-helmet-async'
-import SectionHeader from '../components/SectionHeader'
-import { Shield, MapPin, Calendar, Users, Lightbulb, Heart, Globe, BookOpen } from 'lucide-react'
+import { Helmet } from "react-helmet-async"
+import SectionHeader from "../components/SectionHeader"
+import { Shield, MapPin, Calendar, Users, Lightbulb, Heart, Globe, BookOpen } from "lucide-react"
 
 const About = () => {
   const milestones = [
-    { year: '1984', title: 'Founded in Ventura', desc: 'United Church of Religious Science was established in Ventura, California, as a center for Religious Science and Science of Mind teachings.' },
-    { year: '1990', title: 'First Practitioner Training', desc: 'Launched our first Practitioner Training Program, certifying spiritual practitioners to serve the community.' },
-    { year: '1995', title: 'Community Outreach Expansion', desc: 'Expanded our outreach programs to include food drives, youth mentorship, and interfaith dialogue initiatives.' },
-    { year: '2005', title: 'New Location', desc: 'Moved to our current location at 2646 Palma Dr Ste 250, providing a dedicated space for worship, classes, and community gatherings.' },
-    { year: '2015', title: 'Digital Ministry Launch', desc: 'Began offering online classes and livestreamed Sunday services to reach members beyond Ventura County.' },
-    { year: '2024', title: '40th Anniversary', desc: 'Celebrated 40 years of service to the Ventura community with a special anniversary celebration and community festival.' },
+    { year: "1984", title: "Founded in Ventura", desc: "United Church of Religious Science was established in Ventura, California, as a center for Religious Science and Science of Mind teachings." },
+    { year: "1990", title: "First Practitioner Training", desc: "Launched our first Practitioner Training Program, certifying spiritual practitioners to serve the community." },
+    { year: "1995", title: "Community Outreach Expansion", desc: "Expanded our outreach programs to include food drives, youth mentorship, and interfaith dialogue initiatives." },
+    { year: "2005", title: "New Location", desc: "Moved to our current location at 2646 Palma Dr Ste 250, providing a dedicated space for worship, classes, and community gatherings." },
+    { year: "2015", title: "Digital Ministry Launch", desc: "Began offering online classes and livestreamed Sunday services to reach members beyond Ventura County." },
+    { year: "2024", title: "40th Anniversary", desc: "Celebrated 40 years of service to the Ventura community with a special anniversary celebration and community festival." },
   ]
 
   const values = [
-    { icon: Lightbulb, title: 'Spiritual Awakening', desc: 'We believe every individual has the innate capacity to awaken to their divine nature and realize their full potential through the Science of Mind.' },
-    { icon: Heart, title: 'Unconditional Love', desc: 'Our community is built on the principle of unconditional love, acceptance, and respect for all people regardless of background or belief.' },
-    { icon: BookOpen, title: 'Lifelong Learning', desc: 'We are committed to continuous spiritual education, offering classes, workshops, and resources for seekers at every stage of their journey.' },
-    { icon: Globe, title: 'Community Service', desc: 'We actively serve our local and global community through outreach programs, charitable giving, and social justice initiatives.' },
-    { icon: Users, title: 'Inclusive Fellowship', desc: 'We welcome all people—regardless of race, gender, sexual orientation, or religious background—to join us in spiritual exploration.' },
-    { icon: Shield, title: 'Integrity & Transparency', desc: 'As a 501(c)(3) nonprofit, we operate with full financial transparency and ethical governance for the benefit of our community.' },
+    { icon: Lightbulb, title: "Spiritual Awakening", desc: "We believe every individual has the innate capacity to awaken to their divine nature and realize their full potential through the Science of Mind." },
+    { icon: Heart, title: "Unconditional Love", desc: "Our community is built on the principle of unconditional love, acceptance, and respect for all people regardless of background or belief." },
+    { icon: BookOpen, title: "Lifelong Learning", desc: "We are committed to continuous spiritual education, offering classes, workshops, and resources for seekers at every stage of their journey." },
+    { icon: Globe, title: "Community Service", desc: "We actively serve our local and global community through outreach programs, charitable giving, and social justice initiatives." },
+    { icon: Users, title: "Inclusive Fellowship", desc: "We welcome all people—regardless of race, gender, sexual orientation, or religious background—to join us in spiritual exploration." },
+    { icon: Shield, title: "Integrity & Transparency", desc: "As a 501(c)(3) nonprofit, we operate with full financial transparency and ethical governance for the benefit of our community." },
   ]
 
   return (
@@ -77,7 +77,7 @@ const About = () => {
             <p className="text-slate-600 leading-relaxed mb-6 text-lg">
               The United Church of Religious Science was founded in September 1984 in Ventura, California, 
               by a dedicated group of Religious Science practitioners who sought to create a spiritual home 
-              for the study and practice of Ernest Holmes' Science of Mind philosophy. From its earliest days, 
+              for the study and practice of Ernest Holmes" Science of Mind philosophy. From its earliest days, 
               the church has been committed to providing practical spiritual teachings that empower individuals 
               to transform their lives through the power of their own consciousness.
             </p>

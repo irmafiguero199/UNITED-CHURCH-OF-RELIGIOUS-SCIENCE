@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react'
-import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, Phone, Mail, MapPin, Shield } from 'lucide-react'
+import { useState, useEffect } from "react"
+import { Link, useLocation } from "react-router-dom"
+import { Menu, X, Phone, Mail, MapPin, Shield } from "lucide-react"
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -9,8 +9,8 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50)
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
   useEffect(() => {
@@ -18,15 +18,15 @@ const Header = () => {
   }, [location])
 
   const navLinks = [
-    { to: '/', label: 'Home' },
-    { to: '/about', label: 'About' },
-    { to: '/mission-vision', label: 'Mission & Vision' },
-    { to: '/programs', label: 'Programs' },
-    { to: '/impact', label: 'Impact' },
-    { to: '/team', label: 'Team' },
-    { to: '/news', label: 'News' },
-    { to: '/gallery', label: 'Gallery' },
-    { to: '/contact', label: 'Contact' },
+    { to: "/", label: "Home" },
+    { to: "/about", label: "About" },
+    { to: "/mission-vision", label: "Mission & Vision" },
+    { to: "/programs", label: "Programs" },
+    { to: "/impact", label: "Impact" },
+    { to: "/team", label: "Team" },
+    { to: "/news", label: "News" },
+    { to: "/gallery", label: "Gallery" },
+    { to: "/contact", label: "Contact" },
   ]
 
   return (
@@ -58,7 +58,7 @@ const Header = () => {
       </div>
 
       {/* Main Nav */}
-      <nav className={`transition-all duration-300 ${scrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-sm'}`}>
+      <nav className={`transition-all duration-300 ${scrolled ? "bg-white shadow-lg" : "bg-white/95 backdrop-blur-sm"}`}>
         <div className="container-custom px-4 py-3">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center gap-3">
@@ -76,8 +76,8 @@ const Header = () => {
                   to={link.to}
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                     location.pathname === link.to
-                      ? 'text-primary-700 bg-primary-50'
-                      : 'text-slate-700 hover:text-primary-700 hover:bg-slate-50'
+                      ? "text-primary-700 bg-primary-50"
+                      : "text-slate-700 hover:text-primary-700 hover:bg-slate-50"
                   }`}
                 >
                   {link.label}
@@ -108,8 +108,8 @@ const Header = () => {
                   to={link.to}
                   className={`block px-4 py-3 rounded-md text-base font-medium ${
                     location.pathname === link.to
-                      ? 'text-primary-700 bg-primary-50'
-                      : 'text-slate-700 hover:bg-slate-50'
+                      ? "text-primary-700 bg-primary-50"
+                      : "text-slate-700 hover:bg-slate-50"
                   }`}
                 >
                   {link.label}

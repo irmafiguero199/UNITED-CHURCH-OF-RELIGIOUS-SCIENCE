@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-import { Mail, Phone, MapPin, Shield, Heart, Facebook, Instagram, ExternalLink } from 'lucide-react'
+import { Link } from "react-router-dom"
+import { Mail, Phone, MapPin, Shield, Heart, Facebook, Instagram, ExternalLink } from "lucide-react"
 
 const Footer = () => {
   return (
@@ -31,12 +31,12 @@ const Footer = () => {
             <h4 className="font-serif font-bold text-lg mb-4 text-church-gold">Quick Links</h4>
             <ul className="space-y-2">
               {[
-                { to: '/about', label: 'About Us' },
-                { to: '/mission-vision', label: 'Mission & Vision' },
-                { to: '/programs', label: 'Our Programs' },
-                { to: '/impact', label: 'Our Impact' },
-                { to: '/team', label: 'Leadership Team' },
-                { to: '/registration-information', label: 'Registration Info' },
+                { to: "/about", label: "About Us" },
+                { to: "/mission-vision", label: "Mission & Vision" },
+                { to: "/programs", label: "Our Programs" },
+                { to: "/impact", label: "Our Impact" },
+                { to: "/team", label: "Leadership Team" },
+                { to: "/registration-information", label: "Registration Info" },
               ].map((link) => (
                 <li key={link.to}>
                   <Link to={link.to} className="text-slate-300 hover:text-white transition-colors text-sm">

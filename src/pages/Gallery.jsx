@@ -1,89 +1,89 @@
-import { Helmet } from 'react-helmet-async'
-import { useState } from 'react'
-import SectionHeader from '../components/SectionHeader'
-import { MapPin, Calendar, Filter } from 'lucide-react'
+import { Helmet } from "react-helmet-async"
+import { useState } from "react"
+import SectionHeader from "../components/SectionHeader"
+import { MapPin, Calendar, Filter } from "lucide-react"
 
 const Gallery = () => {
-  const [filter, setFilter] = useState('all')
+  const [filter, setFilter] = useState("all")
 
-  const categories = ['all', 'services', 'events', 'community', 'retreats']
+  const categories = ["all", "services", "events", "community", "retreats"]
 
   const events = [
     {
-      title: 'Easter Sunday Celebration 2026',
-      date: 'April 5, 2026',
-      location: '2646 Palma Dr Ste 250, Ventura, CA',
-      category: 'services',
-      desc: 'Our annual Easter celebration brought together over 120 community members for a powerful service of renewal, music, and spiritual inspiration.',
-      color: 'from-rose-100 to-rose-200',
+      title: "Easter Sunday Celebration 2026",
+      date: "April 5, 2026",
+      location: "2646 Palma Dr Ste 250, Ventura, CA",
+      category: "services",
+      desc: "Our annual Easter celebration brought together over 120 community members for a powerful service of renewal, music, and spiritual inspiration.",
+      color: "from-rose-100 to-rose-200",
     },
     {
-      title: 'Spring Spiritual Retreat',
-      date: 'March 15-16, 2026',
-      location: 'Ojai Valley Retreat Center, Ojai, CA',
-      category: 'retreats',
-      desc: 'A weekend of deep meditation, workshops, and community connection in the beautiful Ojai Valley. 45 participants experienced transformative spiritual practices.',
-      color: 'from-emerald-100 to-emerald-200',
+      title: "Spring Spiritual Retreat",
+      date: "March 15-16, 2026",
+      location: "Ojai Valley Retreat Center, Ojai, CA",
+      category: "retreats",
+      desc: "A weekend of deep meditation, workshops, and community connection in the beautiful Ojai Valley. 45 participants experienced transformative spiritual practices.",
+      color: "from-emerald-100 to-emerald-200",
     },
     {
-      title: 'Community Food Drive',
-      date: 'February 22, 2026',
-      location: 'Ventura County Food Share Warehouse',
-      category: 'community',
-      desc: 'Our volunteers collected and sorted over 2,000 pounds of food for local families in need. A powerful demonstration of love in action.',
-      color: 'from-amber-100 to-amber-200',
+      title: "Community Food Drive",
+      date: "February 22, 2026",
+      location: "Ventura County Food Share Warehouse",
+      category: "community",
+      desc: "Our volunteers collected and sorted over 2,000 pounds of food for local families in need. A powerful demonstration of love in action.",
+      color: "from-amber-100 to-amber-200",
     },
     {
-      title: 'Interfaith Dialogue Panel',
-      date: 'January 18, 2026',
-      location: 'Ventura City Hall Community Room',
-      category: 'events',
-      desc: 'Leaders from Christian, Jewish, Muslim, Buddhist, and Hindu communities came together for an evening of respectful dialogue and mutual understanding.',
-      color: 'from-violet-100 to-violet-200',
+      title: "Interfaith Dialogue Panel",
+      date: "January 18, 2026",
+      location: "Ventura City Hall Community Room",
+      category: "events",
+      desc: "Leaders from Christian, Jewish, Muslim, Buddhist, and Hindu communities came together for an evening of respectful dialogue and mutual understanding.",
+      color: "from-violet-100 to-violet-200",
     },
     {
-      title: 'Holiday Candlelight Service',
-      date: 'December 24, 2025',
-      location: '2646 Palma Dr Ste 250, Ventura, CA',
-      category: 'services',
-      desc: 'A beautiful candlelight service featuring choir performances, readings, and a message of peace and unity for the holiday season.',
-      color: 'from-sky-100 to-sky-200',
+      title: "Holiday Candlelight Service",
+      date: "December 24, 2025",
+      location: "2646 Palma Dr Ste 250, Ventura, CA",
+      category: "services",
+      desc: "A beautiful candlelight service featuring choir performances, readings, and a message of peace and unity for the holiday season.",
+      color: "from-sky-100 to-sky-200",
     },
     {
-      title: 'Youth Talent Showcase',
-      date: 'November 15, 2025',
-      location: 'Ventura Community Center',
-      category: 'events',
-      desc: 'Our youth program showcased the talents of 30 children and teens through music, art, poetry, and dance performances.',
-      color: 'from-orange-100 to-orange-200',
+      title: "Youth Talent Showcase",
+      date: "November 15, 2025",
+      location: "Ventura Community Center",
+      category: "events",
+      desc: "Our youth program showcased the talents of 30 children and teens through music, art, poetry, and dance performances.",
+      color: "from-orange-100 to-orange-200",
     },
     {
-      title: 'Thanksgiving Community Dinner',
-      date: 'November 27, 2025',
-      location: 'United Church of Religious Science, Ventura',
-      category: 'community',
-      desc: 'Over 200 community members gathered for a free Thanksgiving dinner, sharing gratitude, food, and fellowship with neighbors from all walks of life.',
-      color: 'from-yellow-100 to-yellow-200',
+      title: "Thanksgiving Community Dinner",
+      date: "November 27, 2025",
+      location: "United Church of Religious Science, Ventura",
+      category: "community",
+      desc: "Over 200 community members gathered for a free Thanksgiving dinner, sharing gratitude, food, and fellowship with neighbors from all walks of life.",
+      color: "from-yellow-100 to-yellow-200",
     },
     {
-      title: 'Summer Solstice Meditation',
-      date: 'June 21, 2025',
-      location: 'Ventura Botanical Gardens',
-      category: 'retreats',
-      desc: 'An outdoor meditation gathering at sunrise to celebrate the summer solstice. 80 participants joined in silence, prayer, and community.',
-      color: 'from-lime-100 to-lime-200',
+      title: "Summer Solstice Meditation",
+      date: "June 21, 2025",
+      location: "Ventura Botanical Gardens",
+      category: "retreats",
+      desc: "An outdoor meditation gathering at sunrise to celebrate the summer solstice. 80 participants joined in silence, prayer, and community.",
+      color: "from-lime-100 to-lime-200",
     },
     {
-      title: 'Founders Day Celebration',
-      date: 'September 14, 2025',
-      location: '2646 Palma Dr Ste 250, Ventura, CA',
-      category: 'services',
-      desc: 'Celebrating the life and teachings of Ernest Holmes with special speakers, historical exhibits, and a commemorative service.',
-      color: 'from-indigo-100 to-indigo-200',
+      title: "Founders Day Celebration",
+      date: "September 14, 2025",
+      location: "2646 Palma Dr Ste 250, Ventura, CA",
+      category: "services",
+      desc: "Celebrating the life and teachings of Ernest Holmes with special speakers, historical exhibits, and a commemorative service.",
+      color: "from-indigo-100 to-indigo-200",
     },
   ]
 
-  const filteredEvents = filter === 'all' ? events : events.filter(e => e.category === filter)
+  const filteredEvents = filter === "all" ? events : events.filter(e => e.category === filter)
 
   return (
     <>
@@ -115,8 +115,8 @@ const Gallery = () => {
                 onClick={() => setFilter(cat)}
                 className={`px-4 py-2 rounded-full text-sm font-medium capitalize transition-colors ${
                   filter === cat
-                    ? 'bg-primary-700 text-white'
-                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                    ? "bg-primary-700 text-white"
+                    : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                 }`}
               >
                 {cat}
@@ -131,10 +131,10 @@ const Gallery = () => {
                 <div className={`h-48 bg-gradient-to-br ${event.color} flex items-center justify-center`}>
                   <div className="text-center px-4">
                     <span className="text-5xl">
-                      {event.category === 'services' && '✨'}
-                      {event.category === 'events' && '🎉'}
-                      {event.category === 'community' && '🤝'}
-                      {event.category === 'retreats' && '🌿'}
+                      {event.category === "services" && "✨"}
+                      {event.category === "events" && "🎉"}
+                      {event.category === "community" && "🤝"}
+                      {event.category === "retreats" && "🌿"}
                     </span>
                   </div>
                 </div>

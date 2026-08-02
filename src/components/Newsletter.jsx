@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import { Mail, Send, CheckCircle } from 'lucide-react'
+import { useState } from "react"
+import { Mail, Send, CheckCircle } from "lucide-react"
 
 const Newsletter = () => {
-  const [email, setEmail] = useState('')
+  const [email, setEmail] = useState("")
   const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault()
     if (email) {
       setSubmitted(true)
-      setEmail('')
+      setEmail("")
     }
   }
 

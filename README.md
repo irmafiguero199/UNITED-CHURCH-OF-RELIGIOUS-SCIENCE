@@ -131,7 +131,7 @@ The `dist` folder contains the static files ready for deployment. You can deploy
 
 ## Google Workspace for Nonprofits Compliance
 
-This site is designed to meet Google's strict verification requirements:
+This site is designed to meet Google"s strict verification requirements:
 
 1. Domain ownership clearly matches organization name
 2. Zero placeholder content — all text is real and specific

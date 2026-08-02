@@ -1,5 +1,5 @@
-import { Helmet } from 'react-helmet-async'
-import { Shield, MapPin, Mail, Phone } from 'lucide-react'
+import { Helmet } from "react-helmet-async"
+import { Shield, MapPin, Mail, Phone } from "lucide-react"
 
 const PrivacyPolicy = () => {
   return (

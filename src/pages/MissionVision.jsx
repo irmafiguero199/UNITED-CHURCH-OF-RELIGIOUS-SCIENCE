@@ -1,44 +1,44 @@
-import { Helmet } from 'react-helmet-async'
-import SectionHeader from '../components/SectionHeader'
-import { Target, Eye, Compass, Heart, Lightbulb, Users, Globe, Sparkles } from 'lucide-react'
+import { Helmet } from "react-helmet-async"
+import SectionHeader from "../components/SectionHeader"
+import { Target, Eye, Compass, Heart, Lightbulb, Users, Globe, Sparkles } from "lucide-react"
 
 const MissionVision = () => {
   const objectives = [
     {
       icon: Lightbulb,
-      title: 'Spiritual Education Excellence',
-      desc: 'By 2030, expand our class offerings to serve 200+ students annually through Science of Mind courses, practitioner training, and specialized workshops.',
-      year: '2026-2030',
+      title: "Spiritual Education Excellence",
+      desc: "By 2030, expand our class offerings to serve 200+ students annually through Science of Mind courses, practitioner training, and specialized workshops.",
+      year: "2026-2030",
     },
     {
       icon: Users,
-      title: 'Community Growth & Inclusion',
-      desc: 'Grow our active membership to 300+ individuals while maintaining our commitment to inclusivity, diversity, and welcoming all seekers regardless of background.',
-      year: '2026-2030',
+      title: "Community Growth & Inclusion",
+      desc: "Grow our active membership to 300+ individuals while maintaining our commitment to inclusivity, diversity, and welcoming all seekers regardless of background.",
+      year: "2026-2030",
     },
     {
       icon: Heart,
-      title: 'Youth & Family Ministry',
-      desc: 'Develop comprehensive youth and family programs, including Sunday school, teen groups, and family retreats, serving 50+ children and teens annually.',
-      year: '2026-2030',
+      title: "Youth & Family Ministry",
+      desc: "Develop comprehensive youth and family programs, including Sunday school, teen groups, and family retreats, serving 50+ children and teens annually.",
+      year: "2026-2030",
     },
     {
       icon: Globe,
-      title: 'Digital Outreach Expansion',
-      desc: 'Expand our digital ministry to reach 5,000+ individuals worldwide through online classes, podcasts, livestreamed services, and social media engagement.',
-      year: '2026-2030',
+      title: "Digital Outreach Expansion",
+      desc: "Expand our digital ministry to reach 5,000+ individuals worldwide through online classes, podcasts, livestreamed services, and social media engagement.",
+      year: "2026-2030",
     },
     {
       icon: Sparkles,
-      title: 'Community Impact Programs',
-      desc: 'Launch new outreach initiatives including a community food pantry, mental health support groups, and partnerships with local nonprofits.',
-      year: '2026-2030',
+      title: "Community Impact Programs",
+      desc: "Launch new outreach initiatives including a community food pantry, mental health support groups, and partnerships with local nonprofits.",
+      year: "2026-2030",
     },
     {
       icon: Compass,
-      title: 'Facility Enhancement',
-      desc: 'Complete renovations to our Ventura facility to create a more welcoming, accessible, and multi-purpose spiritual center for the community.',
-      year: '2026-2030',
+      title: "Facility Enhancement",
+      desc: "Complete renovations to our Ventura facility to create a more welcoming, accessible, and multi-purpose spiritual center for the community.",
+      year: "2026-2030",
     },
   ]
 

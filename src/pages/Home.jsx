@@ -1,9 +1,9 @@
-import { Helmet } from 'react-helmet-async'
-import { Link } from 'react-router-dom'
-import Hero from '../components/Hero'
-import SectionHeader from '../components/SectionHeader'
-import Newsletter from '../components/Newsletter'
-import { BookOpen, Heart, Users, Calendar, ArrowRight, MapPin, Shield } from 'lucide-react'
+import { Helmet } from "react-helmet-async"
+import { Link } from "react-router-dom"
+import Hero from "../components/Hero"
+import SectionHeader from "../components/SectionHeader"
+import Newsletter from "../components/Newsletter"
+import { BookOpen, Heart, Users, Calendar, ArrowRight, MapPin, Shield } from "lucide-react"
 
 const Home = () => {
   return (
@@ -93,7 +93,7 @@ const Home = () => {
               {
                 icon: Heart,
                 title: "Spiritual Support",
-                desc: "One-on-one spiritual counseling, prayer support, and pastoral care for members navigating life's challenges.",
+                desc: "One-on-one spiritual counseling, prayer support, and pastoral care for members navigating life"s challenges.",
               },
               {
                 icon: Calendar,

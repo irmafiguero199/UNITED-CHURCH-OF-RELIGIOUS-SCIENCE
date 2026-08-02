@@ -1,45 +1,45 @@
-import { Helmet } from 'react-helmet-async'
-import SectionHeader from '../components/SectionHeader'
-import { Calendar, Tag, ArrowRight } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import { Helmet } from "react-helmet-async"
+import SectionHeader from "../components/SectionHeader"
+import { Calendar, Tag, ArrowRight } from "lucide-react"
+import { Link } from "react-router-dom"
 
 const News = () => {
   const articles = [
     {
-      title: 'United Church of Religious Science Launches New Digital Ministry Platform',
-      date: 'July 28, 2026',
-      category: 'Technology',
-      excerpt: 'We are excited to announce the launch of our new digital ministry platform, making our Sunday services, classes, and resources accessible to spiritual seekers worldwide. The platform includes livestreamed services, on-demand class recordings, and a community forum.',
+      title: "United Church of Religious Science Launches New Digital Ministry Platform",
+      date: "July 28, 2026",
+      category: "Technology",
+      excerpt: "We are excited to announce the launch of our new digital ministry platform, making our Sunday services, classes, and resources accessible to spiritual seekers worldwide. The platform includes livestreamed services, on-demand class recordings, and a community forum.",
     },
     {
-      title: 'Summer Spiritual Retreat Draws Record Attendance in Ojai Valley',
-      date: 'July 15, 2026',
-      category: 'Events',
-      excerpt: 'Our annual Summer Spiritual Retreat held at the Ojai Valley Retreat Center welcomed a record 65 participants this year. The weekend featured deep meditation practices, workshops on prosperity consciousness, and powerful community healing circles.',
+      title: "Summer Spiritual Retreat Draws Record Attendance in Ojai Valley",
+      date: "July 15, 2026",
+      category: "Events",
+      excerpt: "Our annual Summer Spiritual Retreat held at the Ojai Valley Retreat Center welcomed a record 65 participants this year. The weekend featured deep meditation practices, workshops on prosperity consciousness, and powerful community healing circles.",
     },
     {
-      title: 'Rev. Susan Goldstein Announces New Practitioner Training Cohort',
-      date: 'June 30, 2026',
-      category: 'Programs',
-      excerpt: 'Applications are now open for the Fall 2026 Practitioner Training Program. This two-year intensive program prepares students to become licensed Religious Science practitioners, capable of providing spiritual counseling and affirmative prayer support.',
+      title: "Rev. Susan Goldstein Announces New Practitioner Training Cohort",
+      date: "June 30, 2026",
+      category: "Programs",
+      excerpt: "Applications are now open for the Fall 2026 Practitioner Training Program. This two-year intensive program prepares students to become licensed Religious Science practitioners, capable of providing spiritual counseling and affirmative prayer support.",
     },
     {
-      title: 'Community Food Drive Exceeds Goal, Provides 3,000 lbs of Food',
-      date: 'June 12, 2026',
-      category: 'Community',
-      excerpt: 'Thanks to the generosity of our congregation and community partners, our quarterly food drive collected over 3,000 pounds of non-perishable food items for Ventura County Food Share. This represents a 50% increase over our previous drive.',
+      title: "Community Food Drive Exceeds Goal, Provides 3,000 lbs of Food",
+      date: "June 12, 2026",
+      category: "Community",
+      excerpt: "Thanks to the generosity of our congregation and community partners, our quarterly food drive collected over 3,000 pounds of non-perishable food items for Ventura County Food Share. This represents a 50% increase over our previous drive.",
     },
     {
-      title: 'Interfaith Panel Explores the Role of Spirituality in Mental Health',
-      date: 'May 22, 2026',
-      category: 'Events',
-      excerpt: 'Leading spiritual leaders and mental health professionals gathered at Ventura City Hall for a thought-provoking discussion on integrating spiritual practices with modern mental health care. The event drew over 150 attendees from diverse faith backgrounds.',
+      title: "Interfaith Panel Explores the Role of Spirituality in Mental Health",
+      date: "May 22, 2026",
+      category: "Events",
+      excerpt: "Leading spiritual leaders and mental health professionals gathered at Ventura City Hall for a thought-provoking discussion on integrating spiritual practices with modern mental health care. The event drew over 150 attendees from diverse faith backgrounds.",
     },
     {
-      title: 'Youth Program Receives Grant for Expanded Curriculum',
-      date: 'May 5, 2026',
-      category: 'Programs',
-      excerpt: 'United Church of Religious Science has been awarded a $15,000 grant from the Ventura County Community Foundation to expand our youth and family ministry programs. The funding will support new curriculum development, family retreat scholarships, and teen leadership training.',
+      title: "Youth Program Receives Grant for Expanded Curriculum",
+      date: "May 5, 2026",
+      category: "Programs",
+      excerpt: "United Church of Religious Science has been awarded a $15,000 grant from the Ventura County Community Foundation to expand our youth and family ministry programs. The funding will support new curriculum development, family retreat scholarships, and teen leadership training.",
     },
   ]
 

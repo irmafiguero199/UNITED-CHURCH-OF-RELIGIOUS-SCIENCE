@@ -1,47 +1,47 @@
-import { Helmet } from 'react-helmet-async'
-import SectionHeader from '../components/SectionHeader'
-import { Users, Heart, BookOpen, HandHeart, Quote, Star } from 'lucide-react'
+import { Helmet } from "react-helmet-async"
+import SectionHeader from "../components/SectionHeader"
+import { Users, Heart, BookOpen, HandHeart, Quote, Star } from "lucide-react"
 
 const Impact = () => {
   const stats = [
-    { icon: Users, value: '500+', label: 'Individuals Served Annually' },
-    { icon: Heart, value: '40+', label: 'Years of Continuous Service' },
-    { icon: BookOpen, value: '200+', label: 'Students Trained in Science of Mind' },
-    { icon: HandHeart, value: '$50K+', label: 'Annual Community Support' },
+    { icon: Users, value: "500+", label: "Individuals Served Annually" },
+    { icon: Heart, value: "40+", label: "Years of Continuous Service" },
+    { icon: BookOpen, value: "200+", label: "Students Trained in Science of Mind" },
+    { icon: HandHeart, value: "$50K+", label: "Annual Community Support" },
   ]
 
   const testimonials = [
     {
-      name: 'Margaret Chen',
-      role: 'Member since 2015',
-      text: 'United Church of Religious Science transformed my life. The Science of Mind classes helped me overcome years of anxiety and discover a sense of peace I never knew was possible. The community here is genuinely loving and supportive.',
+      name: "Margaret Chen",
+      role: "Member since 2015",
+      text: "United Church of Religious Science transformed my life. The Science of Mind classes helped me overcome years of anxiety and discover a sense of peace I never knew was possible. The community here is genuinely loving and supportive.",
     },
     {
-      name: 'David Rodriguez',
-      role: 'Licensed Practitioner, 2019',
-      text: 'I came to this church seeking answers and found a path to becoming a licensed practitioner. The training program is rigorous, compassionate, and deeply transformative. I am now able to serve others in ways I never imagined.',
+      name: "David Rodriguez",
+      role: "Licensed Practitioner, 2019",
+      text: "I came to this church seeking answers and found a path to becoming a licensed practitioner. The training program is rigorous, compassionate, and deeply transformative. I am now able to serve others in ways I never imagined.",
     },
     {
-      name: 'Sarah Thompson',
-      role: 'Youth Program Parent',
-      text: 'The youth program has been a blessing for our family. My children have learned values of compassion, self-esteem, and spiritual awareness that will serve them for a lifetime. The teachers are patient, creative, and deeply caring.',
+      name: "Sarah Thompson",
+      role: "Youth Program Parent",
+      text: "The youth program has been a blessing for our family. My children have learned values of compassion, self-esteem, and spiritual awareness that will serve them for a lifetime. The teachers are patient, creative, and deeply caring.",
     },
     {
-      name: 'James Nakamura',
-      role: 'Community Volunteer',
-      text: 'Through the outreach programs, I have found purpose in serving others. The food drives, shelter support, and interfaith events have connected me with my community in meaningful ways. This church truly walks its talk.',
+      name: "James Nakamura",
+      role: "Community Volunteer",
+      text: "Through the outreach programs, I have found purpose in serving others. The food drives, shelter support, and interfaith events have connected me with my community in meaningful ways. This church truly walks its talk.",
     },
   ]
 
   const partners = [
-    'Ventura County Food Share',
-    'Ojai Foundation',
-    'Ventura Interfaith Council',
-    'Science of Mind Archives Foundation',
-    'Centers for Spiritual Living (CSL)',
-    'Ventura County Community Foundation',
-    'Local Homeless Shelter Network',
-    'Ventura Unified School District',
+    "Ventura County Food Share",
+    "Ojai Foundation",
+    "Ventura Interfaith Council",
+    "Science of Mind Archives Foundation",
+    "Centers for Spiritual Living (CSL)",
+    "Ventura County Community Foundation",
+    "Local Homeless Shelter Network",
+    "Ventura Unified School District",
   ]
 
   return (
@@ -86,7 +86,7 @@ const Impact = () => {
                 <p className="text-slate-700 leading-relaxed mb-6 italic">"{t.text}"</p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
-                    <span className="text-primary-700 font-bold text-sm">{t.name.split(' ').map(n => n[0]).join('')}</span>
+                    <span className="text-primary-700 font-bold text-sm">{t.name.split(" ").map(n => n[0]).join("")}</span>
                   </div>
                   <div>
                     <p className="font-semibold text-church-navy">{t.name}</p>

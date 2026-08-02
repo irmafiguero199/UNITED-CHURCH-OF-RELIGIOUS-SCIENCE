@@ -1,6 +1,6 @@
-import { Helmet } from 'react-helmet-async'
-import SectionHeader from '../components/SectionHeader'
-import { Shield, FileText, MapPin, Users, Calendar, Mail, Phone, Building, Download } from 'lucide-react'
+import { Helmet } from "react-helmet-async"
+import SectionHeader from "../components/SectionHeader"
+import { Shield, FileText, MapPin, Users, Calendar, Mail, Phone, Building, Download } from "lucide-react"
 
 const RegistrationInformation = () => {
   return (
@@ -111,16 +111,16 @@ const RegistrationInformation = () => {
               </div>
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
-                  { name: 'Dr. Patricia Williams', role: 'President' },
-                  { name: 'Robert Martinez', role: 'Vice President' },
-                  { name: 'Linda Chang', role: 'Secretary' },
-                  { name: 'Michael O'Brien', role: 'Treasurer' },
-                  { name: 'Rev. Susan Goldstein', role: 'Senior Minister (Ex-Officio)' },
-                  { name: 'Dr. James Holloway', role: 'Board Member' },
+                  { name: "Dr. Patricia Williams", role: "President" },
+                  { name: "Robert Martinez", role: "Vice President" },
+                  { name: "Linda Chang", role: "Secretary" },
+                  { name: "Michael O'Brien", role: ... }
+                  { name: "Rev. Susan Goldstein", role: "Senior Minister (Ex-Officio)" },
+                  { name: "Dr. James Holloway", role: "Board Member" },
                 ].map((member, i) => (
                   <div key={i} className="flex items-center gap-3 bg-white rounded-lg p-3 border border-slate-100">
                     <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center shrink-0">
-                      <span className="text-primary-700 font-bold text-sm">{member.name.split(' ').map(n => n[0]).join('')}</span>
+                      <span className="text-primary-700 font-bold text-sm">{member.name.split(" ").map(n => n[0]).join("")}</span>
                     </div>
                     <div>
                       <p className="font-semibold text-church-navy text-sm">{member.name}</p>

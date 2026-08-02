@@ -1,21 +1,21 @@
-import { Routes, Route } from 'react-router-dom'
-import MainLayout from './layouts/MainLayout'
-import Home from './pages/Home'
-import About from './pages/About'
-import MissionVision from './pages/MissionVision'
-import Programs from './pages/Programs'
-import Impact from './pages/Impact'
-import Team from './pages/Team'
-import Contact from './pages/Contact'
-import Donate from './pages/Donate'
-import Gallery from './pages/Gallery'
-import News from './pages/News'
-import RegistrationInformation from './pages/RegistrationInformation'
-import PrivacyPolicy from './pages/PrivacyPolicy'
-import TermsOfService from './pages/TermsOfService'
-import NotFound from './pages/NotFound'
-import OrganizationSchema from './seo/OrganizationSchema'
-import ScrollToTop from './components/ScrollToTop'
+import { Routes, Route } from "react-router-dom"
+import MainLayout from "./layouts/MainLayout"
+import Home from "./pages/Home"
+import About from "./pages/About"
+import MissionVision from "./pages/MissionVision"
+import Programs from "./pages/Programs"
+import Impact from "./pages/Impact"
+import Team from "./pages/Team"
+import Contact from "./pages/Contact"
+import Donate from "./pages/Donate"
+import Gallery from "./pages/Gallery"
+import News from "./pages/News"
+import RegistrationInformation from "./pages/RegistrationInformation"
+import PrivacyPolicy from "./pages/PrivacyPolicy"
+import TermsOfService from "./pages/TermsOfService"
+import NotFound from "./pages/NotFound"
+import OrganizationSchema from "./seo/OrganizationSchema"
+import ScrollToTop from "./components/ScrollToTop"
 
 function App() {
   return (

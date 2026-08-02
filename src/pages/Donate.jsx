@@ -1,22 +1,22 @@
-import { Helmet } from 'react-helmet-async'
-import { useState } from 'react'
-import SectionHeader from '../components/SectionHeader'
-import { Heart, Shield, CheckCircle, Gift, Building, FileText } from 'lucide-react'
+import { Helmet } from "react-helmet-async"
+import { useState } from "react"
+import SectionHeader from "../components/SectionHeader"
+import { Heart, Shield, CheckCircle, Gift, Building, FileText } from "lucide-react"
 
 const Donate = () => {
-  const [amount, setAmount] = useState('')
-  const [customAmount, setCustomAmount] = useState('')
+  const [amount, setAmount] = useState("")
+  const [customAmount, setCustomAmount] = useState("")
   const [submitted, setSubmitted] = useState(false)
-  const [formData, setFormData] = useState({ name: '', email: '', frequency: 'one-time' })
+  const [formData, setFormData] = useState({ name: "", email: "", frequency: "one-time" })
 
-  const presetAmounts = ['25', '50', '100', '250', '500', '1000']
+  const presetAmounts = ["25", "50", "100", "250", "500", "1000"]
 
   const handleSubmit = (e) => {
     e.preventDefault()
     setSubmitted(true)
   }
 
-  const displayAmount = amount === 'custom' ? customAmount : amount
+  const displayAmount = amount === "custom" ? customAmount : amount
 
   return (
     <>
@@ -70,11 +70,11 @@ const Donate = () => {
                           <button
                             key={amt}
                             type="button"
-                            onClick={() => { setAmount(amt); setCustomAmount('') }}
+                            onClick={() => { setAmount(amt); setCustomAmount("") }}
                             className={`py-2.5 rounded-lg font-medium text-sm transition-colors ${
                               amount === amt
-                                ? 'bg-primary-700 text-white'
-                                : 'bg-white border border-slate-200 text-slate-700 hover:border-primary-400'
+                                ? "bg-primary-700 text-white"
+                                : "bg-white border border-slate-200 text-slate-700 hover:border-primary-400"
                             }`}
                           >
                             ${amt}
@@ -84,16 +84,16 @@ const Donate = () => {
                       <div className="flex gap-2">
                         <button
                           type="button"
-                          onClick={() => setAmount('custom')}
+                          onClick={() => setAmount("custom")}
                           className={`py-2.5 px-4 rounded-lg font-medium text-sm transition-colors ${
-                            amount === 'custom'
-                              ? 'bg-primary-700 text-white'
-                              : 'bg-white border border-slate-200 text-slate-700 hover:border-primary-400'
+                            amount === "custom"
+                              ? "bg-primary-700 text-white"
+                              : "bg-white border border-slate-200 text-slate-700 hover:border-primary-400"
                           }`}
                         >
                           Custom
                         </button>
-                        {amount === 'custom' && (
+                        {amount === "custom" && (
                           <input
                             type="number"
                             placeholder="Enter amount"
@@ -110,18 +110,18 @@ const Donate = () => {
                     <div>
                       <label className="block text-sm font-medium text-slate-700 mb-2">Frequency</label>
                       <div className="flex gap-2">
-                        {['one-time', 'monthly', 'annual'].map((freq) => (
+                        {["one-time", "monthly", "annual"].map((freq) => (
                           <button
                             key={freq}
                             type="button"
                             onClick={() => setFormData({ ...formData, frequency: freq })}
                             className={`flex-1 py-2.5 rounded-lg font-medium text-sm capitalize transition-colors ${
                               formData.frequency === freq
-                                ? 'bg-primary-700 text-white'
-                                : 'bg-white border border-slate-200 text-slate-700 hover:border-primary-400'
+                                ? "bg-primary-700 text-white"
+                                : "bg-white border border-slate-200 text-slate-700 hover:border-primary-400"
                             }`}
                           >
-                            {freq === 'one-time' ? 'One-Time' : freq}
+                            {freq === "one-time" ? "One-Time" : freq}
                           </button>
                         ))}
                       </div>
@@ -141,7 +141,7 @@ const Donate = () => {
 
                     <button type="submit" className="w-full btn-secondary flex items-center justify-center gap-2 text-lg">
                       <Heart className="w-5 h-5" />
-                      Donate {displayAmount ? `$${displayAmount}` : ''}
+                      Donate {displayAmount ? `$${displayAmount}` : ""}
                     </button>
 
                     <p className="text-xs text-slate-500 text-center">

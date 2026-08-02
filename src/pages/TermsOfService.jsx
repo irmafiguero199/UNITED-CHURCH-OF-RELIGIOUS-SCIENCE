@@ -1,5 +1,5 @@
-import { Helmet } from 'react-helmet-async'
-import { Shield, MapPin, Mail, Phone } from 'lucide-react'
+import { Helmet } from "react-helmet-async"
+import { Shield, MapPin, Mail, Phone } from "lucide-react"
 
 const TermsOfService = () => {
   return (
@@ -47,7 +47,7 @@ const TermsOfService = () => {
             <h2 className="text-2xl font-serif font-bold text-church-navy mt-8 mb-4">2. Use of Website</h2>
             <p className="text-slate-600 leading-relaxed mb-4">
               You may use our website for lawful purposes only. You agree not to use the website in any way that could 
-              damage, disable, overburden, or impair the site or interfere with any other party's use of the website. 
+              damage, disable, overburden, or impair the site or interfere with any other party"s use of the website. 
               You may not attempt to gain unauthorized access to any portion of the website or any systems or networks 
               connected to the website.
             </p>

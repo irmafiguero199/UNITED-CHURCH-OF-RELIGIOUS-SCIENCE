@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-import { Shield, Users, BookOpen, Heart, ArrowRight } from 'lucide-react'
+import { Link } from "react-router-dom"
+import { Shield, Users, BookOpen, Heart, ArrowRight } from "lucide-react"
 
 const Hero = () => {
   return (
@@ -18,7 +18,7 @@ const Hero = () => {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-serif font-bold text-white leading-tight mb-6">
-            Transforming Lives Through the{' '}
+            Transforming Lives Through the{" "}
             <span className="text-church-gold">Science of Mind</span>
           </h1>
 
@@ -42,10 +42,10 @@ const Hero = () => {
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
-              { icon: Users, value: '40+', label: 'Years of Service' },
-              { icon: Heart, value: '500+', label: 'Lives Transformed' },
-              { icon: BookOpen, value: '12+', label: 'Weekly Classes' },
-              { icon: Shield, value: '501(c)(3)', label: 'Tax-Exempt Status' },
+              { icon: Users, value: "40+", label: "Years of Service" },
+              { icon: Heart, value: "500+", label: "Lives Transformed" },
+              { icon: BookOpen, value: "12+", label: "Weekly Classes" },
+              { icon: Shield, value: "501(c)(3)", label: "Tax-Exempt Status" },
             ].map((stat, i) => (
               <div key={i} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 text-center">
                 <stat.icon className="w-6 h-6 text-church-gold mx-auto mb-2" />
